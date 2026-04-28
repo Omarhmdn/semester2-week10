@@ -21,9 +21,19 @@ void generate_random_numbers(int* data, int size)
 
 
 void bubble_sort(int* data, int size)
-{
-    // TODO: implement the bubble sort algorithm
-    // (Use bubblesort.py as your guide)
+{    
+    int swapped = 0;
+    for (int i=0; i<size; i++){
+        if (data[i]>data[i+1]){
+            int temp = data[i+1];
+            data[i+1] = data[i];
+            data[i] = temp;
+            swapped = 1;
+            }
+    if (swapped == 0) {
+        break;
+    }
+}
 }
 
 
